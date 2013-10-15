@@ -1,0 +1,30 @@
+taskprogress:
+    pattern:  /
+    defaults: { _controller: "ApplicationTodoBundle:Taskprogress:index" }
+
+taskprogress_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ApplicationTodoBundle:Taskprogress:show" }
+
+taskprogress_new:
+    pattern:  /new
+    defaults: { _controller: "ApplicationTodoBundle:Taskprogress:new" }
+
+taskprogress_create:
+    pattern:  /create
+    defaults: { _controller: "ApplicationTodoBundle:Taskprogress:create" }
+    requirements: { _method: post }
+
+taskprogress_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ApplicationTodoBundle:Taskprogress:edit" }
+
+taskprogress_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ApplicationTodoBundle:Taskprogress:update" }
+    requirements: { _method: post|put }
+
+taskprogress_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ApplicationTodoBundle:Taskprogress:delete" }
+    requirements: { _method: post|delete }

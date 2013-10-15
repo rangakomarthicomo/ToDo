@@ -1,0 +1,22 @@
+Application\TodoBundle\Entity\Taskprogress:
+    type: entity
+    table: taskprogress
+    repositoryClass: Application\TodoBundle\Entity\TaskprogressRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        estimateddays:
+            type: integer
+        completeddays:
+            type: integer
+    manyToOne:
+      task:
+        targetEntity: Task
+        joinColumn:
+          name: task_id
+          referncedColumnName: id
+        
+    lifecycleCallbacks: {  }

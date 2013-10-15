@@ -1,0 +1,7 @@
+parameters:
+#    application_todo.example.class: Application\TodoBundle\Example
+
+services:
+#    application_todo.example:
+#        class: %application_todo.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

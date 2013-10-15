@@ -1,0 +1,11 @@
+application_todo:
+    resource: "@ApplicationTodoBundle/Resources/config/routing.yml"
+    prefix:   /
+ApplicationTodoBundle_task:
+        resource: "@ApplicationTodoBundle/Resources/config/routing/task.yml"
+        prefix:   /task
+ApplicationTodoBundle_taskprogress:
+     resource: "@ApplicationTodoBundle/Resources/config/routing/taskprogress.yml"
+     prefix:   /taskprogress
+
+

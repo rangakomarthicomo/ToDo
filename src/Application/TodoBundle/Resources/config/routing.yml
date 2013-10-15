@@ -1,0 +1,22 @@
+application_todo_homepage:
+    pattern:  /home
+    defaults: { _controller: ApplicationTodoBundle:Home:home }
+application_todo_loginpage:
+    pattern:  /login
+    defaults: { _controller: ApplicationTodoBundle:Login:login }
+application_todo_logincheck:
+    pattern:  /logincheck
+    defaults: { _controller: ApplicationTodoBundle:Login:logincheck }
+application_todo_registration:
+    pattern:  /register
+    defaults: { _controller: ApplicationTodoBundle:Registration:register }
+application_todo_logout:
+    pattern: /logout
+    defaults: { _controller: ApplicationTodoBundle:Login:logout }
+application_todo_symfonybook:
+    pattern: /book
+    defaults: { _controller: ApplicationTodoBundle:Symfonybook:index }
+application_todo_days:
+    pattern: /days
+    defaults: { _controller: ApplicationTodoBundle:Task:days }
+

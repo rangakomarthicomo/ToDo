@@ -1,0 +1,26 @@
+Application\TodoBundle\Entity\Task:
+    type: entity
+    table: task
+    repositoryClass: Application\TodoBundle\Entity\TaskRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        name:
+            type: string
+            length: 255
+        comments:
+            type: text
+        allocateddays:
+            type: integer
+        createddate:
+            type: date
+        updateddate:
+            type: date
+    oneToMany:
+      progress:
+        targetEntity: Taskprogress
+        mappedBy: task
+    lifecycleCallbacks: {  }

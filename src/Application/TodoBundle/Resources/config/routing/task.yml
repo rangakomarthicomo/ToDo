@@ -1,0 +1,30 @@
+task:
+    pattern:  /
+    defaults: { _controller: "ApplicationTodoBundle:Task:index" }
+
+task_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "ApplicationTodoBundle:Task:show" }
+
+task_new:
+    pattern:  /new
+    defaults: { _controller: "ApplicationTodoBundle:Task:new" }
+
+task_create:
+    pattern:  /create
+    defaults: { _controller: "ApplicationTodoBundle:Task:create" }
+    requirements: { _method: post }
+
+task_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "ApplicationTodoBundle:Task:edit" }
+
+task_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "ApplicationTodoBundle:Task:update" }
+    requirements: { _method: post|put }
+
+task_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "ApplicationTodoBundle:Task:delete" }
+    requirements: { _method: post|delete }

@@ -1,0 +1,28 @@
+Application\TodoBundle\Entity\Register:
+    type: entity
+    table: register
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        firstname:
+            type: string
+            length: 255
+        lastname:
+            type: string
+            length: 255
+        website:
+            type: string
+            length: 255
+        username:
+            type: string
+            length: 255
+        email:
+            type: string
+            length: 255
+        password:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
