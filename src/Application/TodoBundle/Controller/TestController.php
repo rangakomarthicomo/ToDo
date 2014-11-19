@@ -10,8 +10,13 @@ class HomeController extends Controller
     {
          return $this->render('ApplicationTodoBundle:Home:home.html.twig');
     }
+
     public function Sprint1()
     {
          return $this->render('ApplicationTodoBundle:Home:home.html.twig');
+    }
+    public function testSprint2()
+    {
+     	return $this->render('ApplicationTodoBundle:Home:home.html.twig');   
     }
 }
